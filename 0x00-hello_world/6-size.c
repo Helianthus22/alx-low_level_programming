@@ -3,39 +3,40 @@
 
 
 /**
- *
- *  * main - pint the size of various types
- *
- *   *
- *
- *    * Description: prints the size of various types on the computer it is compiled
- *
- *     *
- *
- *      * and run on
- *
- *       *
- *
- *        * Return: Always 0 (Success)
- *
- *         */
+ *  * main - Entry point
+ 
 
-
+ *
+ *    * Return: Always 0 (Success)
+ *
+ */
 
 int main(void)
 
 {
 
-	printf("size of a char: %d byte(s)\n", sizeof(char));
+		int a;
 
-	printf("size of an int: %d byte(s)\n", sizeof(int));
+			long int b;
 
-	printf("size of a long int: %d byte(s)\n", sizeof(long int));
+				long long int c;
 
-	printf("size of a long long int: %d byte(s)\n", sizeof(long long int));
+					char d;
 
-	printf("size of a float: %d byte(s)\n", sizeof(float));
+						float f;
 
-	return (0);
+
+
+							printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(d));
+
+								printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(a));
+
+									printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(b));
+
+										printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(c));
+
+											printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
+
+												return (0);
 
 }
