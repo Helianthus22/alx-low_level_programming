@@ -5,7 +5,7 @@
  *
  *    * Return: By default return zero if no error otherwise return non-zero value.
  *
- *     */
+ */
 
 int main(void)
 
