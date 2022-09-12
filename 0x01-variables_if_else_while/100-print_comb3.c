@@ -1,14 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
-
 
 /**
- *  *  * main - Entry point
- *
+ *  * main - Entry point
  *   *
- *
- *    * Return: Always 0 (Success)
+ *    * Return: Always 0 (success)
  *
  */
 
@@ -16,20 +12,28 @@
 int main(void)
 
 {
-		int d;
-	
-		for (d = 1; d < 100; d++)
+
+		int a;
+		int b;
+
+		for (a = '0'; a <= '9';)
 		{
-			putchar((d / 10) + '0');
-			putchar((d % 10) + '0');
-			if (d != 89)
+			for (b = '1'; b <= '9';)
 			{
-				putchar(',');
-				putchar(' ');			
-			}		
+				if (a != b && b > a)
+				{
+					putchar(a);
+					putchar(b);
+					if (a != '8' || b != '9')
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+				b++;
+			}
+			a++;
 		}
 		putchar('\n');
-
 		return (0);
-
 }
