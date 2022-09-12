@@ -1,25 +1,20 @@
 #include <stdio.h>
 
 /**
- *  * main - print triple combos
- *
- *   *
- *
- *    * Description: print triple digit combos
- *
- *     *
- *
- *      * Return: Always 0 (Success)
+ *  * main - entry point
+ *  *
+ *    * Descreiption: using main program
+ *     * Return: 0 (sucess)
  *
  */
-
-
 
 int main(void)
 
 {
 
 		int i, j, k;
+
+
 
 			i = 48;
 
@@ -57,20 +52,22 @@ int main(void)
 
 																																																												putchar(32);
 
-																																																																			k++;
+																																																																}
 
-																																																																										}
+																																																k++;
 
-																																																			j++;
+																																																			}
 
-																																																										}
-
-																														i++;
-
-																																					}
-
-																				putchar(10);
-
-																											return (0);
+																										j++;
 
 																												}
+
+															i++;
+
+																}
+
+							putchar(10);
+
+								return (0);
+
+}
