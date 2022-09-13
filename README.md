@@ -7,4 +7,5 @@
 6-size.c
 100-intel
 101-quote.c
-st digit
+0x02. C - Functions, nested loops
+
