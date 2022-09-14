@@ -1,14 +1,10 @@
 #include "main.h"
 
 /**
- *  main - prints time
- *
+ *  jack_bauer - prints every minute of the day
  *   *
- *
  *  Description: prints a list of time
- *
  *  Return: Always 0.
- *
  */
 
 
