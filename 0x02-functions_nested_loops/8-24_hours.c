@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- *  * jack_bauer - prints time
+ *  main - prints time
  *
  *   *
  *
- *    * Description: prints a list of time
+ *  Description: prints a list of time
  *
- *     * Return: Always 0.
+ *  Return: Always 0.
  *
  */
 
