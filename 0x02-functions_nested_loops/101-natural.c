@@ -2,14 +2,9 @@
 
 
 /**
- *  * main - sums nultplies of 3 or 5
- *
- *   *
- *
- *    * Description: multiples between 0 and 1024
- *
- *     * Return: Always(0) Success
- *
+ *  main - sums nultplies of 3 or 5
+ *  Description: multiples between 0 and 1024
+ *  Return: Always(0) Success
  */
 
 int main(void)
