@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - prints Putchar
+ * main - print Putchar
  *
  *Description: print _putchar
  *
@@ -22,4 +22,6 @@ int main(void)
 	_putchar('\n');
 
 	return (0);
+
 }
+^C
