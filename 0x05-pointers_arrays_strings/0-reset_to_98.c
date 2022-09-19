@@ -1,4 +1,5 @@
-#include <main.h>
+#include  "main.h"
+#include <stdio.h>
 
 /**
  * main - updates value of pointer to 98
@@ -7,7 +8,6 @@
 
 void reset_to_98(int *n)
 {
-	int var = 98;
-	int *n = &var;
+	*n = 98;
 }
 
