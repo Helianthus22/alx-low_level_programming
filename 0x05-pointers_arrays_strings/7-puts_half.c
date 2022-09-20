@@ -13,12 +13,12 @@ int len = strlen(s), i;
 if (len % 2 == 0)
 {
 for (i = len / 2; i < len; i++)
-_putchar(s[i]);
+puts_half(s[i]);
 }
 else
 {
 for (i = len / 2 + 1; i < len; i++)
-_putchar(s[i]);
+puts_half(s[i]);
 }
-_putchar('\n');
+puts_half('\n');
 }
