@@ -1,22 +1,20 @@
-#include"main.h"
+#include "main.h"
 
 /**
- * puts2 - this prints every character of a string
- *
- * @str: string parameter input
- *
- * Return: Nothing
+* puts2 - print alternating chars of string
+* @str: string, is the parameter pased
+* Return: Void
 */
-
 void puts2(char *str)
 {
-	int i;
+int i;
 
-	for (i = 0; str[i] != '\0'; ++i)
-	{
-		if (i % 2 == 0)
-			_putchar(str[i]);
-	}
-	_putchar('\n');
+i = 0;
+while (str[i] != '\0')
+{
+if (i % 2 == 0)
+_putchar(str[i]);
+i++;
 }
-
+_putchar('\n');
+}
