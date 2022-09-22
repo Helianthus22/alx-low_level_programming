@@ -1,27 +1,27 @@
 #include "main.h"
 
 /**
- * _strncpy - function to copy a string
- * @dest: string to copy to
- * @src: string being copied
+ * _strncat - function to append strings
+ * @dest: string to append by src
+ * @src: string to append to dest
  * @n: number of bytes
  *
  * Return: address of dest
  */
-char *_strncpy(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
-	int i;
+	int i, j;
 
-	i = 0;
-	while (i < n && *(src + i))
-	{
-		*(dest + i) = *(src + i);
+	i = j = 0;
+	while (*(dest + i))
 		i++;
-	}
-	while (i < n)
+	while (j < n && *(src + j))
 	{
-		*(dest + i) = '\0';
+		*(dest + i) = *(src + j);
 		i++;
+		j++;
 	}
+	if (j < n)
+		*(dest + i) = *(src + j);
 	return (dest);
 }
