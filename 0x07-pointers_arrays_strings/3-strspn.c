@@ -24,5 +24,5 @@ unsigned int i, j, bool;
 		if (bool == 1)
 			break;
 	}
-	return (i)
+	return (i);
 }
