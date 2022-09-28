@@ -1,34 +1,45 @@
 #include "main.h"
+/**
+* is_palindrome - Entry point
+* Description - A function that takes a pointer to an int
+* *@s: the function accepts an input saved into s
+* Return: Nothing for now
+*/
+int is_palindrome(char *s)
+{
+	if (*s == 0)
+		return (1);
+	return (check_pal(s, 0, _strlen_recursion(s)));
+}
 
 /**
- * is_prime - detects if an input number is a prime number.
- * @n: input number.
- * @c: iterator.
- * Return: 1 if n is a prime number. 0 if n is not a prime number.
+ * _strlen_recursion - returns the length of a string
+ * @s: string to calculate the length of
+ *
+ * Return: length of the string
  */
-int is_prime(unsigned int n, unsigned int c)
+
+int _strlen_recursion(char *s)
 {
-	if (n % c == 0)
-	{
-		if (n == c)
-			return (1);
-		else
-			return (0);
-	}
-	return (0 + is_prime(n, c + 1));
+	if (*s == '\0')
+		return (0);
+	return (1 + _strlen_recursion(s + 1));
 }
+
 /**
- * is_prime_number - detects if an input number is a prime number.
- * @n: input number.
- * Return: 1 if n is a prime number. 0 if n is not a prime number.
+ * check_pal - checks the characters recursively for palindrome
+ * @s: string to check
+ * @i: iterator
+ * @len: length of the string
+ *
+ * Return: 1 if palindrome, 0 if not
  */
-int is_prime_number(int n)
+
+int check_pal(char *s, int i, int len)
 {
-	if (n == 0)
+	if (*(s + i) != *(s + len - 1))
 		return (0);
-	else if (n < 0)
-		return (0);
-	else if (n == 1)
-		return (0);
-	return (is_prime(n, 2));
+	if (i >= len)
+		return (1);
+	return (check_pal(s, i + 1, len - 1));
 }
