@@ -8,4 +8,4 @@
 100-intel
 101-quote.c
 0x02. C - Functions, nested loops
-
+0x0A. C - argc, argv
